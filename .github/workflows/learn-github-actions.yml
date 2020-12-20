@@ -18,6 +18,7 @@ jobs:
   Second_job:
     name: Second job in action
     runs-on: macos-11.0
+    needs: First_job
     steps: 
      - uses: actions/setup-node@v1
      - run: |
