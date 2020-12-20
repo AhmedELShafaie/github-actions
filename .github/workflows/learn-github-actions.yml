@@ -19,6 +19,7 @@ jobs:
     name: Second job in action
     runs-on: macos-11.0
     steps: 
+     - uses: actions/setup-node@v1
      - run: |
 
         uname -a 
