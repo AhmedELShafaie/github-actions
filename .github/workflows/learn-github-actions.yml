@@ -6,7 +6,7 @@ on: [push]
 jobs:
   
   First_job:
-    name: First job
+    name: First job in action 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
