@@ -2,11 +2,13 @@ name: Learn Github action
 
 on: 
  workflow_dispatch: 
-  inputs: 
-   description: "Input value"
-   tags: 
-   required: true
-
+  inputs:
+     logLevel:
+       description: 'Log level'     
+       required: true
+       default: 'warning'
+     tags:
+       description: 'Test scenario tags'
  
  
  
