@@ -1,6 +1,14 @@
 name: Learn Github action
 
-on: [push]
+on: 
+  workflow_dispatch:
+   inputs:
+    description: Add Input  
+    tag: 
+    required: true
+ 
+ 
+ 
 
 
 jobs:
@@ -16,14 +24,17 @@ jobs:
           bats -v
           echo  ${{ github.event.inputs.tag }}
 
-  Second_job:
-    name: Second job in action
-    runs-on: macos-11.0
-    needs: First_job
-    steps: 
-     - uses: actions/setup-node@v2
-       with:
-        node-version: 14 
-     - run: |
-        node -v 
-        uname -a 
+
+
+
+  #Second_job:
+  #  name: Second job in action
+  #  runs-on: macos-11.0
+  #  needs: First_job
+  #  steps: 
+  #   - uses: actions/setup-node@v2
+  #     with:
+  #      node-version: 14 
+  #   - run: |
+  #      node -v 
+  #      uname -a 
