@@ -25,7 +25,7 @@ jobs:
       - run:  | 
           npm install -g bats
           bats -v
-          echo  ${{ github.event.inputs.tag }}
+          echo  ${{ github.event.inputs.tags }}
 
 
 
