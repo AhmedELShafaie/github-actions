@@ -9,6 +9,11 @@ on:
        default: 'warning'
      tags:
        description: 'Test scenario tags'
+     
+     firstName: 
+       description: 'Add first name'
+       required: true
+        
  
 jobs:
   
@@ -22,6 +27,8 @@ jobs:
           npm install -g bats
           bats -v
           echo  ${{ github.event.inputs.logLevel }}
+          echo ${{ github.event.inputs.firstName}}
+
 
 
 
