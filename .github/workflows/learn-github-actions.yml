@@ -14,6 +14,7 @@ jobs:
       - run:  | 
           npm install -g bats
           bats -v
+          echo  ${{ github.event.inputs.tag }}
 
   Second_job:
     name: Second job in action
