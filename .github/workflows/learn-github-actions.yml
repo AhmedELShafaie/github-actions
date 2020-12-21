@@ -10,10 +10,6 @@ on:
      tags:
        description: 'Test scenario tags'
  
- 
- 
-
-
 jobs:
   
   First_job:
@@ -25,7 +21,7 @@ jobs:
       - run:  | 
           npm install -g bats
           bats -v
-          echo  ${{ github.event.inputs.tags }}
+          echo  ${{ github.event.inputs.logLevel }}
 
 
 
