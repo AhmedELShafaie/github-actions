@@ -1,11 +1,8 @@
 name: Learn Github action
 
-on:
- workflow_dispatch:
-  inputs:
-   description: 'First inputs'
-   tags: 
-   required: true
+on: 
+ workflow_dispatch: 
+
  
  
  
